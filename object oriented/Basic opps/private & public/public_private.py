@@ -66,7 +66,7 @@ class Car:
         self.make = make                   # Public attribute
         self.model = model                 # Public attribute
         self.year = year                   # Public attribute
-        self.__mileage = mileage          # Private attribute
+        self.__mileage = mileage           # Private attribute
 
     def get_mileage(self):
         return self.__mileage            # Public method to access private attribute
