@@ -1,7 +1,7 @@
 # Understanding Encapsulation in Python
 
 <center>
-![image](https://github.com/BuddhadebKoner/Python-Tutorial-for-Beginners/assets/113292029/0d827492-1627-4db7-9c71-411c80277207)
+
 </center>
 
 Encapsulation is a fundamental concept in object-oriented programming (OOP) that involves bundling data and methods that operate on that data into a single unit known as a class. This concept helps in achieving data hiding, access control, and abstraction.
