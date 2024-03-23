@@ -17,6 +17,6 @@ class Animal(Dog):  # child
 dog1 = Animal("Tomy")
 dog2 = Animal("Mote")
 
-print(dog1.name,dog2.name)  # no dought it will work
-print(dog1.bark()) # it will also work
+print(dog1.name,dog2.name)  # no doughty it will work
+print(dog1.bark())  # it will also work
 print(dog2.eat())
