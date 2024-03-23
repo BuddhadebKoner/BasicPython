@@ -1,43 +1,42 @@
-#### Class and Instance Explanation    
-    Class Definitions:
-        You define two classes: Animal and Dog.
-        Animal serves as the parent class, and Dog is the child class inheriting from Animal.
+## Explanation of Code
 
-    Constructor Initialization:
-        When you create an instance of Dog with my_dog = Dog("Buddy"), it calls the __init__ method of the Animal class due to inheritance.
-        In the Animal class __init__ method, the name attribute is initialized with the value passed during object creation. In this case, it's "Buddy".
+#### Definition of Classes (Dog and Animal):
 
-    Instance Creation:
-        An instance of the Dog class named my_dog is created, and the __init__ method of the Animal class is called with the name "Buddy". This sets the name attribute of my_dog to "Buddy".
+- `Dog` class has two static methods: `bark()` and `eat()`.
+- `Animal` class inherits from `Dog` and has an `__init__` method to initialize the `name` attribute.
 
-    Method Call:
-        You call the display() method on the my_dog instance (my_dog.display()).
-        Inside the display() method, it prints "My name is" followed by the value of self.name, which is "Buddy".
+#### Object Creation:
 
-Let's represent this in a simple diagram:
+- Two instances of the `Animal` class are created: `dog1` and `dog2`. During the instantiation, the `__init__` method of the `Animal` class is called for each instance, setting their `name` attributes.
 
-lua
+#### Accessing Attributes:
 
-                   +-----------+
-                   |  Animal   |
-                   +-----------+
-                         |
-                   +-----------+
-                   |   Dog     |
-                   +-----------+
-                         |
-                   +-----------+
-                   |  display  |
-                   +-----------+
-                         |
-                   +-----------+
-                   |   name    |
-                   +-----------+
+- The `name` attribute of `dog1` and `dog2` are accessed using `print(dog1.name, dog2.name)`. This will print the names of the dogs (`Tomy` and `Mote`).
 
+#### Accessing Methods:
 
+- The `bark()` method is called on `dog1` using `print(dog1.bark())`. Since `bark()` is a static method, it doesn't require an instance of the class to be called. It will print `I can bark`.
+- Similarly, the `eat()` method is called on `dog2` using `print(dog2.eat())`, which prints `I can eat`.
 
-- The `name` attribute is initialized within the `__init__` method of the `Animal` class.
-- The `Dog` class inherits the `name` attribute from the `Animal` class.
-- The `display()` method in the `Dog` class utilizes the `name` attribute to print the dog's name.
+#### Visual Representation:
 
-When you create an instance of `Dog` with the name "Buddy" and call the `display()` method, it correctly prints "My name is Buddy" because the `name` attribute has been set during object creation.
+```plaintext
+              Dog
+          +-------------+
+          |  bark()     |
+          |  eat()      |
+          +-------------+
+                 |
+                 |
+                 V
+              Animal
+          +-------------+
+          |  __init__() |
+          +-------------+
+          |  name       |
+          +-------------+
+ ```        
+- The `Dog` class serves as the parent class.
+- The `Animal` class is derived from the `Dog` class (child class).
+- Instances of the `Animal` class `(dog1 and dog2)` inherit methods from the Dog class.
+- Each instance of `Animal` has its own `name` attribute.
