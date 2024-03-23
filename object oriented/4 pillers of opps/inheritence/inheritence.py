@@ -3,6 +3,20 @@ when one class (child/derive) derives the property & methods of another class (p
 """
 
 
+# define a superclass
+class super_class:
+    pass
+    # attributes and method definition
+
+
+# inheritance
+class sub_class(super_class):
+    pass
+    # attributes and method of super_class
+    # attributes and method of sub_class
+
+
+# example -- >
 class Person:
     def __init__(self, fame, name):
         self.firstname = fame
@@ -26,6 +40,3 @@ class Student(Person):  # child class (parents class)
 # Use the Student class to create an object, and then execute the printname method:
 x = Student("virat", "koholi")
 x.printname()
-
-
-
